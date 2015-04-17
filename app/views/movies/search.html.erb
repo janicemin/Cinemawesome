@@ -1,0 +1,26 @@
+<h2>Title: <%= @movie_search["Title"] %></h2>
+<p>Genre: <%= @movie_search["Genre"] %></p>
+<p>Released: <%= @movie_search["Released"] %></p>
+<p>Director: <%= @movie_search["Director"] %></p>
+<p>Starring: <%= @movie_search["Actors"] %></p>
+<p>Plot Summary: <%= @movie_search["Plot"] %></p>
+<p>Rotten Tomatoes Score: <%= @movie_search["Metascore"] %></p>
+<img src="<%= @movie_search["Poster"] %>" alt="poster">
+<% if current_user %>
+<%= link_to "Add to Favorites", movies_path %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Search Results</h2>
+
+<a href="/movies/show/<%= @movie_search['imdbID'] %>"><%= @movie_search["Title"] %></a>
+<%= %> -->
